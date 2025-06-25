@@ -1,7 +1,4 @@
-from pathlib import Path
 
-# Define the content of the README file
-readme_content = """
 # 🛒 Spring Boot Microservices E-Commerce Backend
 
 This is a simple e-commerce backend project built using Spring Boot and follows a microservices architecture. It consists of four core services:
@@ -24,7 +21,7 @@ Each service is independently deployed and connected via synchronous HTTP commun
 5. **When placing an order**, the system:
    - Retrieves cart items.
    - Validates inventory availability.
-   - If stock is sufficient, creates the order and reduces inventory.
+   - If stock is sufficient, creates the order, reduces inventory and cart clear automatically.
    - If stock is insufficient, the order fails with an appropriate message.
 6. **Order history** can be viewed or cleared.
 
@@ -101,10 +98,9 @@ The next development phase will introduce:
 ## 🚀 How to Run
 
 1. Clone this repo
-2. Set up MySQL databases: `product_db`, `inventory_db`, `cart_db`, `order_db`
-3. Configure `application.properties` or `application.yml` in each service
-4. Run each Spring Boot service independently
-5. Use Postman or a frontend to test endpoints
+2. Configure `application.properties` or `application.yml` in each service
+3. Run each Spring Boot service independently
+4. Use Postman or a frontend to test endpoints
 
 ---
 
@@ -118,15 +114,5 @@ The next development phase will introduce:
 
 ---
 
-## 👨‍💻 Developer
 
-**Pathum Udayanga**  
-University of Kelaniya, Sri Lanka  
-E-commerce backend enthusiast | Java & Spring Boot Developer
-"""
 
-# Write the content to a file
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content)
-
-readme_path
