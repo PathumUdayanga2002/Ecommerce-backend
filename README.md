@@ -73,6 +73,23 @@ Each service is independently deployed and connected via synchronous HTTP commun
 
 ---
 
+## 📲 Swagger UI
+- http://localhost:8081/swagger-ui/index.html#/
+
+ ![System Architecture](docs/inventorySwagger.png)
+
+- http://localhost:8082/swagger-ui/index.html#/
+
+![System Architecture](docs/productSwagger.png)
+
+- http://localhost:8083/swagger-ui/index.html#/
+
+![System Architecture](docs/cartSwagger.png)
+
+- http://localhost:8084/swagger-ui/index.html#/
+
+![System Architecture](docs/orderSwagger.png)
+
 ## 🛠️ Tech Stack
 
 - Java 17
